@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grace to Glory Affordable Home Solutions</title>
+<meta name="description" content="Grace to Glory Affordable Home Solutions — shared, supportive, affordable housing in Indianapolis, Indiana.">
+<style>
+:root{
+  --green:#173d31;
+  --green2:#214c3d;
+  --cream:#f7f1e7;
+  --gold:#b28a42;
+  --ink:#23332d;
+  --white:#ffffff;
+  --soft:#eee6d8;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;width:100%;max-width:100%;overflow-x:hidden}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.6;
+  -webkit-text-size-adjust:100%;
+}
+img{display:block;width:100%;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--green);
+  line-height:1.12;
+}
+h1{font-size:clamp(2.5rem,7vw,5.2rem);margin-bottom:18px}
+h2{font-size:clamp(2rem,4.4vw,3.15rem);margin-bottom:14px}
+p{margin-bottom:18px}
+section{width:100%;padding:clamp(54px,7vw,90px) clamp(18px,5vw,64px)}
+.wrap{width:100%;max-width:var(--max);margin:0 auto}
+.center{max-width:850px;margin:0 auto;text-align:center}
+.kicker{
+  margin-bottom:10px;color:var(--gold);font-size:.78rem;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase
+}
+.goldline{width:62px;height:3px;margin:16px 0 28px;background:var(--gold)}
+.center .goldline{margin-left:auto;margin-right:auto}
+
+/* Navigation */
+.nav{
+  position:sticky;top:0;z-index:20;width:100%;
+  padding:12px clamp(16px,5vw,64px);
+  background:rgba(23,61,49,.98);color:#fff;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  box-shadow:0 3px 14px rgba(0,0,0,.12)
+}
+.brand{min-width:0;display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo{
+  flex:0 0 43px;width:43px;height:43px;border:2px solid var(--gold);
+  border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:20px
+}
+.brand-text{min-width:0}
+.brand strong{display:block;font-family:Georgia,serif;line-height:1.15;letter-spacing:1px}
+.brand small{display:block;color:#e7c98e;font-size:10px;letter-spacing:1.2px}
+.navlinks{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:10px 20px}
+.navlinks a{color:#fff;text-decoration:none;font-size:14px}
+.navlinks a:hover{color:#e7c98e}
+
+/* Hero */
+.hero{
+  position:relative;min-height:680px;padding:0;display:grid;align-items:center;
+  isolation:isolate;overflow:hidden
+}
+.hero-photo{
+  position:absolute;inset:0;z-index:-2;
+  background:
+    linear-gradient(90deg,rgba(15,39,32,.86) 0%,rgba(15,39,32,.73) 42%,rgba(15,39,32,.28) 100%),
+    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat
+}
+.hero-inner{
+  width:100%;max-width:var(--max);margin:0 auto;
+  padding:80px clamp(18px,5vw,64px)
+}
+.hero-copy{max-width:680px;color:#fff}
+.hero .kicker{color:#e7c98e}
+.script{
+  color:#fff;font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;font-size:clamp(1.6rem,3.4vw,2.5rem);margin-bottom:0
+}
+.hero h1{color:#fff;margin-bottom:12px}
+.hero p{font-size:clamp(1rem,2vw,1.18rem);max-width:620px}
+.price{
+  display:inline-block;margin:8px 0 10px;padding:14px 18px;
+  border-left:3px solid var(--gold);background:rgba(255,255,255,.08);
+  font-weight:700;letter-spacing:.04em
+}
+.price span{
+  display:inline-block;margin-left:8px;color:#e7c98e;
+  font-family:Georgia,serif;font-size:1.75rem
+}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:12px 20px;border-radius:5px;
+  background:var(--gold);color:#fff;text-decoration:none;font-weight:700;
+  border:2px solid var(--gold);transition:.2s ease
+}
+.btn:hover{transform:translateY(-1px);filter:brightness(.96)}
+.btn.alt{background:transparent;border-color:#fff}
+
+/* About */
+.welcome{background:var(--cream)}
+.about-single{max-width:850px;margin:0 auto}
+.about-copy{width:100%}
+
+/* Features */
+.features{
+  width:100%;max-width:var(--max);margin:38px auto 0;display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border:1px solid #d7cdbd;border-radius:7px;overflow:hidden
+}
+.feature{min-width:0;padding:32px 22px;text-align:center;border-right:1px solid #d7cdbd}
+.feature:last-child{border-right:0}
+.icon{margin-bottom:14px;color:var(--gold);font-size:32px}
+.feature strong{
+  display:block;color:var(--green);font-family:Georgia,serif;
+  font-size:1.08rem;overflow-wrap:break-word
+}
+
+/* Rooms */
+.rooms{background:#fff}
+.gallery{
+  width:100%;max-width:900px;margin:36px auto 0;display:grid;grid-template-columns:1fr
+}
+.photo{
+  width:100%;overflow:hidden;border-radius:6px;
+  box-shadow:0 12px 35px rgba(0,0,0,.13);background:#ddd
+}
+.single-gallery .photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+
+/* Who we serve */
+.cater{background:var(--green);color:#fff}
+.cater h2,.cater h3{color:#fff}
+.cater-grid{
+  width:100%;max-width:var(--max);margin:0 auto;display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(32px,5vw,60px);align-items:center
+}
+.cater-card{
+  min-width:0;padding:clamp(26px,4vw,42px);
+  border:1px solid rgba(255,255,255,.28);border-radius:7px;
+  background:rgba(255,255,255,.06)
+}
+.accept{color:#e7c98e;font-weight:700}
+
+/* Mission */
+.mission{background:var(--cream)}
+
+/* Contact */
+.cta{background:var(--gold);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.contact-box{
+  width:100%;max-width:850px;margin:28px auto 0;
+  padding:clamp(22px,4vw,32px);border-radius:7px;background:var(--green);
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px
+}
+.contact-box a{color:#fff;text-decoration:none}
+.contact-box span{color:#fff}
+footer{
+  padding:24px 18px;text-align:center;background:#102c24;color:#d8e0dc;font-size:.9rem
+}
+
+@media (max-width:900px){
+  .features{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .feature:nth-child(2){border-right:0}
+  .cater-grid{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .nav{align-items:flex-start}
+  .navlinks{display:none}
+}
+@media (max-width:600px){
+  section{padding:50px 18px}
+  .nav{padding:12px 16px}
+  .brand strong{font-size:.92rem}
+  .brand small{font-size:.56rem;white-space:normal}
+  .hero{min-height:620px}
+  .hero-inner{padding:58px 18px}
+  .hero h1{font-size:clamp(2.2rem,11vw,3.2rem)}
+  .hero-copy{max-width:100%}
+  .price{line-height:1.35}
+  .price span{margin-left:0}
+  .buttons{display:grid;grid-template-columns:1fr}
+  .btn{width:100%}
+  .features{grid-template-columns:1fr}
+  .feature{border-right:0;border-bottom:1px solid #d7cdbd}
+  .feature:last-child{border-bottom:0}
+  .single-gallery .photo img{aspect-ratio:4/3}
+  .contact-box{flex-direction:column;align-items:stretch}
+  .contact-box a,.contact-box span{display:block;width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#home">
+    <div class="logo">♡</div>
+    <div class="brand-text">
+      <strong>GRACE TO GLORY</strong>
+      <small>AFFORDABLE HOME SOLUTIONS</small>
+    </div>
+  </a>
+  <nav class="navlinks" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#offer">What's Included</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">Shared • Supportive • Affordable</div>
+      <div class="script">The Right Place</div>
+      <h1>to Call Home</h1>
+      <p>A safe, clean, and affordable place to live and grow.</p>
+      <div class="price">STARTING RATE PER BED IS <span>$650</span> / MONTH</div>
+      <p>Shared and private rooms are available.</p>
+      <div class="buttons">
+        <a class="btn" href="https://form.jotform.com/262395985435068" target="_blank" rel="noopener noreferrer">Inquire About Availability</a>
+        <a class="btn alt" href="tel:8665755934">866-575-5934</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="welcome" id="about">
+  <div class="wrap about-single">
+    <div class="about-copy">
+      <div class="kicker">WELCOME HOME</div>
+      <h2>A Place of Comfort.<br>A Path to a Better Tomorrow.</h2>
+      <div class="goldline"></div>
+      <p>Grace to Glory Affordable Home Solutions provides shared supportive housing for individuals in need. We believe everyone deserves a safe, clean, and affordable space to call home.</p>
+      <p>Our goal is to provide a welcoming space where residents can find stability, dignity, and a fresh start.</p>
+    </div>
+  </div>
+</section>
+
+<section id="offer">
+  <div class="center">
+    <h2>Shared Supportive Housing</h2>
+    <div class="goldline"></div>
+  </div>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">♡</div>
+      <strong>Provides drug &amp; alcohol free living environment</strong>
+    </div>
+    <div class="feature">
+      <div class="icon">⌁</div>
+      <strong>All Utilities plus WiFi Included</strong>
+    </div>
+    <div class="feature">
+      <div class="icon">⌂</div>
+      <strong>Shared / Private Rooms Available</strong>
+    </div>
+    <div class="feature">
+      <div class="icon">▱</div>
+      <strong>Fully Furnished / 24 hour surveillance in common areas</strong>
+    </div>
+  </div>
+</section>
+
+<section class="rooms">
+  <div class="center">
+    <div class="kicker">YOUR NEW SPACE</div>
+    <h2>Comfortable, Clean &amp; Affordable</h2>
+    <div class="goldline"></div>
+  </div>
+  <div class="gallery single-gallery">
+    <div class="photo">
+      <img
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=85"
+        alt="Comfortable furnished bedroom">
+    </div>
+  </div>
+</section>
+
+<section class="cater">
+  <div class="cater-grid">
+    <div>
+      <div class="kicker">WHO WE SERVE</div>
+      <h2>A Fresh Start Is Possible.</h2>
+      <div class="goldline"></div>
+      <p>We cater to the homeless population, including seniors, veterans, ex-offenders (re-entry), and DV survivors.</p>
+      <p class="accept">We accept SSI, SSDI, &amp; private pay.</p>
+    </div>
+    <div class="cater-card">
+      <h3>Supportive. Respectful. Affordable.</h3>
+      <p>Grace to Glory is designed to offer residents a welcoming space to rebuild stability while living in a clean and supportive home environment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="center">
+    <div class="kicker">OUR MISSION</div>
+    <h2>Our Mission</h2>
+    <div class="goldline"></div>
+    <p>Our mission is to provide a safe, clean, and affordable space for those in need.</p>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="center">
+    <div class="kicker" style="color:#173d31">CONTACT US</div>
+    <h2>Ready for a Fresh Start?</h2>
+    <p>We're Here for You.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn" style="background:#173d31;border-color:#173d31"
+         href="https://form.jotform.com/262395985435068"
+         target="_blank"
+         rel="noopener noreferrer">Apply for Housing</a>
+    </div>
+  </div>
+  <div class="contact-box">
+    <a href="tel:8665755934">📞 866-575-5934</a>
+    <a href="mailto:gracetoglory_2026@outlook.com">✉️ gracetoglory_2026@outlook.com</a>
+    <span>📍 Indianapolis, Indiana</span>
+  </div>
+</section>
+</main>
+
+<footer>
+  © 2026 Grace to Glory Affordable Home Solutions. All rights reserved.
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a").forEach(function (link) {
+    if (link.textContent.trim().toLowerCase() === "inquire about availability") {
+      link.href = "https://form.jotform.com/262395985435068";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
